@@ -1,9 +1,10 @@
-import { Historia } from "../Historia/Historia";
-import { Home } from "../Home/Home";
+import { Historia } from "../Historia/Historia.js";
+import { Home } from "../Home/Home.js";
 import { Routes, Route} from "react-router-dom";
-
+import { Music } from "../Music/Music.js";
+import{ Footer} from "../Footer/Footer";
 import { Integrantes } from "../Integrantes/Integrantes";
-import { Menu } from "../Menu/Menu";
+import { Menu } from "../Menu/Menu.js";
 
 
 
@@ -14,11 +15,15 @@ export function Rutas(){
     <div className="Routes">
         <Menu/> 
       
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="historia" element={<Historia />} />
-        <Route path="integrantes" element={<Integrantes />} />
-      </Routes>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="historia" element={<Historia />} />
+          <Route path="integrantes" element={<Integrantes />} />
+          <Route path="music" element={<Music />} />
+      
+
+        </Routes>
+        <Footer></Footer>
     </div>
     
     )

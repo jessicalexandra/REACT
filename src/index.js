@@ -12,6 +12,6 @@ root.render(
   
     <BrowserRouter>
       <Rutas/>
-    </BrowserRouter>,
+    </BrowserRouter>
     </React.StrictMode>
 )
