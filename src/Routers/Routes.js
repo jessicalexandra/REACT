@@ -19,7 +19,7 @@ export function Rutas(){
           <Route path="/" element={<Home />} />
           <Route path="historia" element={<Historia />} />
           <Route path="integrantes" element={<Integrantes />} />
-          <Route path="music" element={<Music />} />
+          <Route path="musica" element={<Music />} />
       
 
         </Routes>

@@ -26,18 +26,19 @@ export function Integrantes(){
 
 
     return(
-       <div className="row row-cols-1 row-cols-md-2 g-0 mt-5">
+       <div className="row row-cols-1 row-cols-md-4 g-0 mt-5">
             {
                 integrantes.map(function(integrante){
                     return(
                         <>
-                        <div className="col-mt-3">
+                        <div className="col mt-3 py-5 px-3 bg-dark">
                             <div className="card h-100">
-                                <img src={integrante.fotografia}  alt="" className="img-fluid w-100"/>
-                                <h4 className='text-center fw-bold'>{integrante.nombre}</h4>
-                                <br/>
-                                <h5>Edad:{integrante.Edad}</h5>
-                                <h5>Rol:{integrante.instrumento}</h5>
+                                <img src={integrante.fotografia}  alt="" className="img-fluid w-100 img-size" />
+                               <div className='bodycss text-center pb-5'>
+                               <h4 className='fw-bold pt-3 pb-2'>{integrante.nombre}</h4>
+                                <h5>Edad: {integrante.Edad}</h5>
+                                <h5>Rol: {integrante.instrumento}</h5>
+                               </div>
                             </div>
                         </div>
                         </>
