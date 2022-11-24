@@ -32,23 +32,33 @@ export function Music(){
         }
         else{
             return(
-                <>
-                <h1>Estan las listas las canciones</h1>
+                <> 
+               
+                <div className="container"> 
+                <h1 className="text-center">Estan las listas las canciones</h1>
+                <div className="row">
                 {
                 canciones.tracks.map(function(cancion){
                     return(
                         
-                        <>
-                        <h5>{cancion.name}</h5>
+                        <div className="col-12 col-md-3 m-3">
+                        
+                        
+                        <img src={cancion.album.images[1].url } />
                         <audio controls="controls" src={cancion.preview_url}></audio>
-                        {/* <p>{cancion.album.images[0] }</p> */}
-                        </>
+                        <h5>{cancion.name}</h5>
+                        </div>
                     )
 
                 })
                   
 
                 }
+
+                </div>
+
+                </div>
+             
                 </>
             )
         }
